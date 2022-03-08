@@ -1,0 +1,37 @@
+h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#skills {
+    text-align: center;
+}
+
+.content {
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+div{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20pt;
+    margin: 20px;
+    height: fit-content;
+}
+
+
+
+h1::before{
+    content: '<' 
+}
+
+h1::after {
+    content: '/>'
+}

@@ -1,0 +1,27 @@
+#header{
+    background: #c1c1c1;
+}
+
+ul{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: right;
+}
+
+li{
+    display: inline;
+    padding: 1em 1.3em 1em 1.7em;
+}
+
+#header > ul > a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    border-bottom: 5px solid black;
+}

@@ -1,0 +1,27 @@
+#jumbotron{
+    padding-top: 30px;
+    background-color: aqua;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content > div {
+    width: 40%;
+    position: relative;
+}
+
+
+#msg-div {
+    text-align: center;
+    margin: 10% auto;
+}
+
+#pic-div {
+    text-align: center;
+    margin: 15% auto;
+}
