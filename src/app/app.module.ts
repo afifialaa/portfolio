@@ -7,6 +7,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import {PartialsModule} from './partials/partials.module';
 import { SkillsComponent } from './skills/skills.component'
 
+import {ProjectModule} from './project/project.module'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { SkillsComponent } from './skills/skills.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PartialsModule
+    PartialsModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

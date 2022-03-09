@@ -1,0 +1,9 @@
+<div class="container-fluid" id="projects">
+    <h1>Projects</h1>
+    <div class="container">
+        <div class="grid-container">
+            <app-project-card class="project-card" *ngFor="let repo of repos" [name]="repo.name" [description]="repo.description"></app-project-card>
+        </div>
+    </div>
+</div>
+

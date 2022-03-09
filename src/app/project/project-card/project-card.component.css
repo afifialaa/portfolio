@@ -1,0 +1,13 @@
+.card{
+    height: 370px;
+    text-align: center;
+}
+
+.card > .card-title {
+    margin-top: 3.5vh;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}

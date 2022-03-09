@@ -1,7 +1,8 @@
 #jumbotron{
     padding-top: 30px;
-    background-color: aqua;
+    background-color: #2F2F2F;
     height: 100%;
+    color: white;
 }
 
 .content{
@@ -24,4 +25,36 @@
 #pic-div {
     text-align: center;
     margin: 15% auto;
+}
+
+
+button{
+    display:inline-block;
+    padding:0.46em 1.6em;
+    border:0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#BFBF57;
+    text-align:center;
+    transition: all 0.15s;
+    border-radius: 5px;
+}
+
+button:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    border: 2px solid #BFBF57;
+    background-color: #D8CC76;
+    border-radius: 5px;
+}
+@media all and (max-width:30em){
+    a.button{
+        display:block;
+        margin:0.4em auto;
+    }
 }
