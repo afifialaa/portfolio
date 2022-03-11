@@ -1,0 +1,30 @@
+#experience{
+    padding-top: 3em;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#experience > h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#experience > h1::before {
+    content: '<'
+}
+
+#experience > h1::after {
+    content: '/>'
+}
+
+.exp-item{
+    padding: 1em 0em 1em 3em;
+    margin: 3em 0;
+    border-left: 10px solid var(--accent-color);
+}
+
+
+.exp-item:hover{
+    border-left: 20px solid var(--accent-color);
+}

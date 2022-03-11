@@ -7,13 +7,15 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import {PartialsModule} from './partials/partials.module';
 import { SkillsComponent } from './skills/skills.component'
 
-import {ProjectModule} from './project/project.module'
+import {ProjectModule} from './project/project.module';
+import { ExperienceComponent } from './experience/experience.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     JumbotronComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
