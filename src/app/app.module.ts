@@ -8,14 +8,16 @@ import {PartialsModule} from './partials/partials.module';
 import { SkillsComponent } from './skills/skills.component'
 
 import {ProjectModule} from './project/project.module';
-import { ExperienceComponent } from './experience/experience.component'
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactmeComponent } from './contactme/contactme.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     JumbotronComponent,
     SkillsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ContactmeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,42 @@
+#contactme{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#contactme > h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#contactme > h1::before {
+    content: '<'
+}
+
+#contactme > h1::after {
+    content: '/>';
+}
+
+
+.content{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+.content > div {
+    width: 100%;
+    padding: 2em 0em 2em 4em;
+}
+
+.links-section {
+    border-right: 5px solid var(--primary-color);
+}
+
+.links-section > ul {
+    list-style-type: none;
+}
+
+.msg-section {
+    border-left: 5px solid var(--primary-color);
+}

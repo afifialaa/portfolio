@@ -1,5 +1,6 @@
 #experience{
     padding-top: 3em;
+    padding-bottom: 3em;
     background-color: var(--primary-color);
     color: white;
 }
