@@ -6,26 +6,21 @@ h1 {
 }
 
 #skills {
+    width: 100%;
     text-align: center;
+    background-color: var(--accent-color);
+    padding-bottom: 4em;
 }
 
 .content {
-    width: 90%;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
 }
 
-div{
-    display: inline-block;
+.content > div{
     cursor: pointer;
-    font-size: 20pt;
-    margin: 20px;
-    height: fit-content;
+    padding: 20px;
 }
-
 
 
 h1::before{
