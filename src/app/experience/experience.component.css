@@ -19,6 +19,15 @@
     content: '/>'
 }
 
+@keyframes example {
+    from {
+        border-left: 10px solid var(--accent-color);
+    }
+    to {
+        border-left: 30px solid var(--accent-color);
+    }
+}
+
 .exp-item{
     padding: 1em 0em 1em 3em;
     margin: 3em 0;
@@ -27,5 +36,7 @@
 
 
 .exp-item:hover{
-    border-left: 20px solid var(--accent-color);
+    /* border-left: 20px solid var(--accent-color); */
+    animation: example 0.3s linear 1 normal forwards;
+    cursor: pointer;
 }
