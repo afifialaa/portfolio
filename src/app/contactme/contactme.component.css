@@ -3,6 +3,7 @@
     padding-bottom: 3em;
 }
 
+
 #contactme > h1 {
     font-weight: bold;
     text-align: center;
@@ -20,23 +21,35 @@
 
 .content{
     margin-top: 3em;
+    /* display: grid;
+    grid-template-columns: auto auto; */
     display: flex;
     flex-direction: row;
 }
 
 .content > div {
     width: 100%;
-    padding: 2em 0em 2em 4em;
 }
 
-.links-section {
-    border-right: 5px solid var(--primary-color);
+.content > div > h2 {
+    text-align: center;
+    font-weight: bold;
 }
 
 .links-section > ul {
     list-style-type: none;
 }
 
-.msg-section {
-    border-left: 5px solid var(--primary-color);
+.links-section > ul  {
+    text-align: left;
+    padding-top: 2em;
+}
+
+.links-section li {
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+.msg-section > form {
+    padding-top: 2em;
 }
