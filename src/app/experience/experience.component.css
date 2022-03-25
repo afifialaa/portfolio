@@ -16,7 +16,7 @@
 }
 
 #experience > h1::after {
-    content: '/>'
+    content: '/>';
 }
 
 @keyframes example {
@@ -37,6 +37,6 @@
 
 .exp-item:hover{
     /* border-left: 20px solid var(--accent-color); */
-    animation: example 0.3s linear 1 normal forwards;
+    animation: example 250ms linear 1 normal forwards;
     cursor: pointer;
 }
