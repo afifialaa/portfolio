@@ -14,17 +14,49 @@
         </div>
         <div class="msg-section">
             <h2>Say Something</h2>
-            <form>
+            <form [formGroup]="contactForm" (ngSubmit)="onContactSubmit()">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control" formControlName="name" placeholder="Name">
                 </div>
+
+                <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="alert alert-danger">
+                    <div *ngIf="name?.errors?.['minlength']">
+                        Too short to be a name.
+                    </div>
+                    <div *ngIf="name?.errors?.['required']">
+                        Please fill out your name.
+                    </div>
+                </div>
+
+
                 <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" formControlName="email" placeholder="Email">
                 </div>
+
+                <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="alert alert-danger">
+                    <div *ngIf="email?.errors?.['minlength']">
+                        Too short to be a email.
+                    </div>
+                    <div *ngIf="email?.errors?.['required']">
+                        Please fill out your email.
+                    </div>
+                    <div *ngIf="email?.errors?.['pattern']">
+                        Not a valid email.
+                    </div>
+                </div>
+
                 <div class="form-group">
-                    <textarea class="form-control"></textarea>
+                    <textarea class="form-control" formControlName="message"></textarea>
                 </div>
-                <button class="btn btn-success">Send</button>
+
+                <div *ngIf="message?.invalid && (message?.dirty || message?.touched)" class="alert alert-danger">
+                    <div *ngIf="message?.errors?.['required']">
+                        Message is required.
+                    </div>
+                </div>
+
+
+                <input type="submit" class="btn btn-success" [disabled]="!contactForm.valid">
             </form>
         </div>
     </div>
