@@ -19,6 +19,26 @@
     content: '/>';
 }
 
+@keyframes showAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hide{
+    visibility: hidden;
+    animation: showAnimation 1s linear 1 normal forwards;
+}
+
+.show{
+    visibility: visible;
+    animation: showAnimation 1s linear 1 normal forwards;
+}
+
+
 @keyframes example {
     from {
         border-left: 10px solid var(--accent-color);

@@ -1,37 +1,18 @@
 <div class="container-fluid" id="experience">
     <h1>Experience</h1>
     <div class="container content">
-        <div class="exp-item">
+        <div *ngFor="let exp of experiences, let i=index" class="exp-item">
             <div class="date">
-                Nov 2017 - Dec 2017
+                {{ exp["date"]}}
             </div>
             <div class="title">
-                <h2> Tech Elevate, Dell Technologies </h2>
+                <h2>{{ exp["title"]}}</h2>
             </div>
             <div class="description">
-                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
+                <h5>{{ exp["description"]}}</h5>
             </div>
-        </div>
-        <div class="exp-item">
-            <div class="date">
-                Nov 2017 - Dec 2017
-            </div>
-            <div class="title">
-                <h2> Tech Elevate, Dell Technologies </h2>
-            </div>
-            <div class="description">
-                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
-            </div>
-        </div>
-        <div class="exp-item">
-            <div class="date">
-                Nov 2017 - Dec 2017
-            </div>
-            <div class="title">
-                <h2> Intern, PetroJet </h2>
-            </div>
-            <div class="description">
-                <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
+            <a (click)="showDetails(i)" [innerHTML]="detailsHTMLContent[i]"></a>
+            <div class="details" [ngClass]="{'show': showDetailsArr[i], 'hide':!showDetailsArr[i]}" [innerHTML]="exp['details']">
             </div>
         </div>
     </div>
